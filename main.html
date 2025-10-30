@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kruthik Gowda H R — Portfolio</title>
+  <meta name="description" content="Portfolio of Kruthik Gowda — Full‑Stack Developer & AI enthusiast based in Berlin." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#7dd3fc;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,-apple-system,"Helvetica Neue",Arial;color:#e6eef6;background:linear-gradient(180deg,#071023 0%, #071627 60%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:36px auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;gap:16px;align-items:center}
+    .avatar{width:74px;height:74px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#072033}
+    h1{margin:0;font-size:22px}
+    p.lead{margin:4px 0 0;color:var(--muted)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-weight:600}
+    main{display:grid;grid-template-columns:1fr 340px;gap:24px;margin-top:28px}
+    /* left column */
+    .card{background:var(--card);padding:22px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .intro{display:flex;gap:18px;align-items:flex-start}
+    .intro .meta{flex:1}
+    .cta{display:flex;gap:10px;margin-top:14px}
+    .btn{background:linear-gradient(90deg,var(--accent),#60a5fa);padding:10px 14px;border-radius:10px;color:#042033;font-weight:700;border:none;cursor:pointer}
+    .btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(125,211,252,0.12)}
+    /* sections */
+    h2.section{font-size:16px;margin:0 0 12px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);color:var(--muted);font-weight:600}
+    .muted{color:var(--muted)}
+    ul.clean{list-style:none;padding:0;margin:0}
+    ul.clean li{padding:6px 0;border-bottom:1px dashed rgba(255,255,255,0.02)}
+
+    /* right column */
+    aside .contact-list{display:flex;flex-direction:column;gap:8px}
+    .skill-list{display:flex;flex-wrap:wrap;gap:8px}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
+
+    /* responsive */
+    @media (max-width:980px){main{grid-template-columns:1fr;}
+      .avatar{width:60px;height:60px}
+    }
+
+    /* subtle animations */
+    .fade-in{animation:fadeIn .6s ease both}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+    /* project card */
+    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);border:1px solid rgba(255,255,255,0.02)}
+    .project h3{margin:0 0 6px;font-size:15px}
+    .project p{margin:0;color:var(--muted);font-size:14px}
+    .tags{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="fade-in">
+      <div class="brand">
+        <div class="avatar">KG</div>
+        <div>
+          <h1>Kruthik Gowda H R</h1>
+          <p class="lead">Full‑Stack Developer • Data Analyst  — Berlin, Germany</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="card intro fade-in">
+          <div class="meta">
+            <h2 class="section">Summary</h2>
+            <p>I am strongly committed to leveraging technology for impactful solutions, backed by a solid foundation in full-stack development and artificial intelligence. I am eager to contribute to meaningful projects and have a proactive approach to learning and collaboration. My passion lies in transforming innovative ideas into practical applications. With experience in developing user-friendly tools and efficient systems, I align well with a mission focused on advancing technology for positive impact.</p>
+            <div class="cta">
+              <a class="btn" href="#contact">Hire / Contact</a>
+              <a class="btn ghost" href="KruthikGowda_Resume.pdf" download="KruthikGowda_Resume.pdf">Download Resume</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card fade-in" style="margin-top:18px">
+          <h2 class="section">Key achievements</h2>
+          <ul class="clean">
+            <li>UI Enhancement Success — Enhanced UI for project with 20% increased user satisfaction.</li>
+            <li>House price predictor — Predicted house prices with 85% accuracy using AI tools.</li>
+            <li>Efficiency Improvement - Reduced complaint processing time by 30% in rural management.</li>
+            <li>Companion App Optimization - Optimized app performance to handle 50% more users.</li>
+          </ul>
+        </div>
+
+        <div id="projects" class="card fade-in" style="margin-top:18px">
+          <h2 class="section">Projects</h2>
+          <div class="project">
+            <h3>Squid Game — Real‑time Gesture Game</h3>
+            <p>1. Developed a real-time game inspired by "Red Light, Green Light" using computer vision and AI.<br>
+               2. Used MediaPipe and TensorFlow for pose estimation and synchronized movements with music cues.<br>
+               3. Delivered a cost-effective gaming solution without the need for expensive hardware.<br>
+               4. Highlighted potential applications in AR gaming, fitness tracking, and gesture recognition.</p>
+            <div class="tags"><span class="pill">MediaPipe</span><span class="pill">TensorFlow</span><span class="pill">Computer Vision</span></div>
+          </div>
+
+          <div class="project" style="margin-top:12px">
+            <h3>Rural Development Management System</h3>
+            <p>1. Developed an online system to streamline rural development complaints and management.<br>
+               2. Enabled villagers to report issues like infrastructure problems conveniently online.<br>
+               3. Allowed officers to track, manage, and resolve complaints efficiently, improving transparency.<br>
+               4. Reduced processing time and enhanced data security for better system reliability.<br>
+               5. Proposed future enhancements include customer feedback, live chat, and improved registration features.</p>
+            <div class="tags"><span class="pill">Java</span><span class="pill">SQL</span><span class="pill">Backend</span></div>
+          </div>
+
+          <div class="project" style="margin-top:12px">
+            <h3>VTU Companion App</h3>
+            <p>1. Developed the "VTU Companion App" to provide students with academic resources and results in a fast, user-friendly manner.<br>
+               2. Key features include SGPA/CGPA calculation, access to study materials, and result viewing.<br>
+               3. Solved the issue of slow web pages during peak result times with optimized performance and security.<br>
+               4. Proposed future improvements include enhanced digitalization and advanced security for data privacy.</p>
+            <div class="tags"><span class="pill">Performance</span><span class="pill">Mobile/Web</span></div>
+          </div>
+        </div>
+
+        <div id="experience" class="card fade-in" style="margin-top:18px">
+          <h2 class="section">Experience</h2>
+          <ul class="clean">
+            <li>
+              <strong>TechCiti Technologie — Student Intern, Full‑Stack Developer</strong>
+              <div class="muted">Bangalore, India • Aug 2022 — Sep 2022</div>
+              <div class="muted" style="margin-top:6px">1. Contributed to front-end development using HTML, CSS, and JavaScript to enhance UI.<br>
+                2. Assisted in back-end development using Java.<br>
+                3. Conducted application testing to ensure functionality and resolved bugs under mentor supervision.</div>
+            </li>
+            <li style="margin-top:8px">
+              <strong>edufabrica — Student Intern, AI & ML</strong>
+              <div class="muted">Bangalore, India • Aug 2021 — Oct 2021</div>
+              <div class="muted" style="margin-top:6px">1. Completed a project titled "Prediction of House Prices" utilizing Artificial Intelligence and Machine Learning techniques.<br>
+               2. Gained hands-on experience in AI-driven predictive modeling and software tools while adhering to project requirements.<br>
+               3. Demonstrated strong analytical skills, teamwork, and technical proficiency in delivering the project successfully.</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card fade-in" style="margin-top:18px">
+          <h2 class="section">Education</h2>
+          <ul class="clean">
+            <li><strong>IU International University of Applied Sciences</strong> — M.Sc. Computer Science (Apr 2024 — Present)</li>
+            <li style="margin-top:8px"><strong>Maharaja Institute of Technology</strong> — B.Tech Computer Science (Jul 2019 — Jun 2023)</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <aside>
+        <div class="card fade-in">
+          <h2 class="section">Contact</h2>
+          <div class="contact-list">
+            <div><strong>Email</strong><br><a href="mailto:kruthikgowda2804@gmail.com">kruthikgowda2804@gmail.com</a></div>
+            <div style="margin-top:8px"><strong>Phone</strong><br>+49 176 58236693</div>
+            <div style="margin-top:8px"><strong>Location</strong><br>Berlin, Germany</div>
+            <div style="margin-top:8px"><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/kruthik-gowda-h-r-8078571a9" target="_blank" rel="noopener">linkedin.com/in/kruthik-gowda-h-r-8078571a9</a></div>
+          </div>
+
+          <div style="margin-top:12px">
+            <h2 class="section">Skills</h2>
+            <div class="skill-list">
+              <span class="pill">Python (basic)</span>
+              <span class="pill">C</span>
+              <span class="pill">HTML & CSS</span>
+              <span class="pill">JavaScript (beginner)</span>
+              <span class="pill">SQL</span>
+              <span class="pill">Power BI</span>
+            </div>
+          </div>
+
+          <div style="margin-top:12px">
+            <h2 class="section">Languages</h2>
+            <div class="muted">Kannada • English • Hindi • German (A2)</div>
+          </div>
+        </div>
+
+        <div class="card fade-in" style="margin-top:18px">
+          <h2 class="section">Quick links</h2>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <a class="btn ghost" href="#projects">View Projects</a>
+            <a class="btn ghost" href="KruthikGowda_Resume.pdf" download>Download Resume</a>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      Built with effort — For customization, edit the single HTML file. View source to copy components.
+    </footer>
+  </div>
+
+  <script>
+    // Simple smooth scroll for internal nav
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+      })
+    });
+
+    // Tiny accessibility: reduce motion if requested
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      document.querySelectorAll('.fade-in').forEach(el=>el.style.animation='none');
+    }
+  </script>
+</body>
+</html>
